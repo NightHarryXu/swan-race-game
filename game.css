@@ -39,6 +39,7 @@ html {
 .swan {
     position: relative;
     width: 5vw;
+    /* 默认天鹅宽度，适合桌面设备 */
 }
 
 .swan img {
@@ -100,4 +101,16 @@ html {
     padding: 10px 20px;
     font-size: 1.2em;
     cursor: pointer;
+}
+
+
+/* 仅为手机设备应用限制 */
+
+@media (max-width: 600px) {
+    .swan {
+        width: 15vw;
+        /* 在手机设备上使用稍小的宽度 */
+        max-width: 80px;
+        /* 限制最大宽度 */
+    }
 }
