@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -23,23 +22,17 @@ html {
 
 #swans {
     position: absolute;
-    top: 10%;
-    /* 上方留出10%的空间 */
-    left: 2%;
-    /* 左侧稍微偏移，避免遮挡 */
+    top: 10%; /* 上方留出10%的空间 */
+    left: 2%; /* 左侧稍微偏移，避免遮挡 */
     display: flex;
-    flex-direction: column;
-    /* 垂直排列 */
-    justify-content: space-between;
-    /* 等间距排列 */
-    height: 75%;
-    /* 占据屏幕中间80%的空间 */
+    flex-direction: column; /* 垂直排列 */
+    justify-content: space-between; /* 等间距排列 */
+    height: 75%; /* 占据屏幕中间75%的空间 */
 }
 
 .swan {
     position: relative;
-    width: 5vw;
-    /* 默认天鹅宽度，适合桌面设备 */
+    width: 5vw; /* 默认天鹅宽度，适合桌面设备 */
 }
 
 .swan img {
@@ -103,14 +96,18 @@ html {
     cursor: pointer;
 }
 
-
-/* 仅为手机设备应用限制 */
-
-@media (max-width: 600px) {
+/* 为手机竖屏设备应用限制 */
+@media (max-width: 600px) and (orientation: portrait) {
     .swan {
-        width: 15vw;
-        /* 在手机设备上使用稍小的宽度 */
-        max-width: 80px;
-        /* 限制最大宽度 */
+        width: 15vw; /* 在竖屏设备上使用稍小的宽度 */
+        max-width: 80px; /* 限制最大宽度 */
+    }
+}
+
+/* 为手机横屏设备应用限制 */
+@media (max-width: 600px) and (orientation: landscape) {
+    .swan {
+        width: 10vw; /* 横屏时缩小天鹅的宽度，避免超出屏幕 */
+        max-width: 100px; /* 限制最大宽度 */
     }
 }
