@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+.swan-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.swan {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.swan.selected {
+    border: 3px solid green;
+}
+
+.name-input {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 200px;
+}
+
+.ready-button img {
+    width: 200px;
+    cursor: not-allowed;
+}
+
+.ready-button img.active {
+    cursor: pointer;
+}

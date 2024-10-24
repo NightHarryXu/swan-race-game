@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Swan</title>
+    <link rel="stylesheet" href="choose-swan.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Choose Your Swan</h1>
+
+        <div class="swan-selection">
+            <img src="1.png" id="swan1" class="swan" onclick="selectSwan(1)">
+            <img src="2.png" id="swan2" class="swan" onclick="selectSwan(2)">
+            <img src="3.png" id="swan3" class="swan" onclick="selectSwan(3)">
+            <img src="4.png" id="swan4" class="swan" onclick="selectSwan(4)">
+            <img src="5.png" id="swan5" class="swan" onclick="selectSwan(5)">
+            <img src="6.png" id="swan6" class="swan" onclick="selectSwan(6)">
+        </div>
+
+        <div class="name-input">
+            <label for="playerName">Enter Your Name:</label>
+            <input type="text" id="playerName" placeholder="Your Swan's Name">
+        </div>
+
+        <div class="ready-button">
+            <img id="readyButton" src="Ready_Button_None.png" alt="Ready Button">
+        </div>
+    </div>
+
+    <script src="choose-swan.js"></script>
+</body>
+
+</html>
