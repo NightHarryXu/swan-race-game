@@ -23,25 +23,22 @@ html {
 
 #swans {
     position: absolute;
-    top: 15%;
-    /* 稍微降低天鹅的起始位置 */
+    top: 10%;
+    /* 上方留出10%的空间 */
     left: 2%;
-    /* 保证天鹅稍微右移，避免遮挡 */
+    /* 左侧稍微偏移，避免遮挡 */
     display: flex;
     flex-direction: column;
-    /* 垂直排列天鹅 */
-    justify-content: flex-start;
-    /* 让天鹅紧密排列 */
-    gap: 3%;
-    /* 缩小天鹅之间的间距 */
-    height: 80%;
-    /* 调整整体天鹅区域的高度 */
+    /* 垂直排列 */
+    justify-content: space-between;
+    /* 等间距排列 */
+    height: 75%;
+    /* 占据屏幕中间80%的空间 */
 }
 
 .swan {
     position: relative;
-    width: 18%;
-    /* 增加天鹅的尺寸 */
+    width: 5vw;
 }
 
 .swan img {
@@ -68,10 +65,16 @@ html {
 
 #success {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+}
+
+#success img {
+    max-width: 50%;
+    height: auto;
+    max-height: 50%;
 }
 
 .modal {
