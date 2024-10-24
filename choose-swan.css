@@ -1,34 +1,36 @@
+html,
 body {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 3vw;
+    margin-bottom: 2vh;
 }
 
 .container {
     text-align: center;
-    width: 100%;
+    width: 90vw;
+    height: 90vh;
 }
 
 .swan-selection {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    margin-bottom: 5vh;
 }
 
 .swan {
-    width: 100px;
+    width: 12vw;
     height: auto;
     cursor: pointer;
     border: 3px solid transparent;
@@ -40,17 +42,17 @@ h1 {
 }
 
 .name-input {
-    margin-bottom: 20px;
+    margin-bottom: 5vh;
 }
 
 input[type="text"] {
-    padding: 10px;
-    font-size: 1em;
-    width: 200px;
+    padding: 1vh;
+    font-size: 2vw;
+    width: 30vw;
 }
 
 .ready-button img {
-    width: 200px;
+    width: 30vw;
     cursor: not-allowed;
 }
 
