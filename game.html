@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swan Race</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+        <img id="background" src="Swimming_Pool.png" alt="Swimming Pool">
+
+        <div id="swans">
+            <!-- 5个AI控制的天鹅 -->
+            <div class="swan" id="swan1"><img src="1.png"></div>
+            <div class="swan" id="swan2"><img src="2.png"></div>
+            <div class="swan" id="swan3"><img src="3.png"></div>
+            <div class="swan" id="swan4"><img src="4.png"></div>
+            <div class="swan" id="swan5"><img src="5.png"></div>
+
+            <!-- 用户选择的天鹅 -->
+            <div class="swan" id="playerSwan"><img src="1.png"><span id="playerName">Player's Swan</span></div>
+        </div>
+
+        <!-- 倒计时 -->
+        <div id="countdown">
+            <img id="countImg" src="Count_3.png" alt="Countdown">
+        </div>
+
+        <!-- 成功提示 -->
+        <div id="success">
+            <img src="Success.png" alt="Success">
+        </div>
+    </div>
+
+    <!-- 提示弹窗 -->
+    <div id="startModal" class="modal">
+        <div class="modal-content">
+            <p>Game starts soon! Tap the screen quickly to make your swan swim faster!</p>
+            <button id="startButton">OK</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
