@@ -46,7 +46,7 @@ function startRace() {
         let playerSwan = document.getElementById('playerSwan');
         let currentPlayerPos = playerSwan.offsetLeft;
         playerSwan.style.left = (currentPlayerPos + playerSwanSpeed) + 'px';
-        playerSwanSpeed *= 0.9; // 减少速度的惯性，更慢减速
+        playerSwanSpeed *= 0.9;
 
         // 判断是否到达终点
         if (currentPlayerPos + playerSwan.clientWidth >= window.innerWidth) {
