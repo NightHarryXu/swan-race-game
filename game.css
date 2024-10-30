@@ -116,13 +116,17 @@ html {
 }
 
 
-/* 为手机横屏设备应用限制 */
+/* 横屏设备限制，减少间距并缩小高度 */
 
 @media (max-width: 600px) and (orientation: landscape) {
+    #swans {
+        height: 60%;
+        /* 缩小天鹅区域高度，避免超出 */
+        gap: 2%;
+        /* 缩小天鹅之间的间距 */
+    }
     .swan {
         width: 8vw;
-        /* 横屏时缩小天鹅的宽度，避免超出屏幕 */
         max-width: 100px;
-        /* 限制最大宽度 */
     }
 }
