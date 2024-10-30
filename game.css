@@ -24,22 +24,16 @@ html {
 #swans {
     position: absolute;
     top: 10%;
-    /* 上方留出10%的空间 */
     left: 2%;
-    /* 左侧稍微偏移，避免遮挡 */
     display: flex;
     flex-direction: column;
-    /* 垂直排列 */
     justify-content: space-between;
-    /* 等间距排列 */
     height: 70%;
-    /* 占据屏幕中间75%的空间 */
 }
 
 .swan {
     position: relative;
     width: 6vw;
-    /* 默认天鹅宽度，适合桌面设备 */
 }
 
 .swan img {
@@ -119,6 +113,6 @@ html {
 @media (max-width: 1000px) and (orientation: landscape) {
     .swan {
         width: 5vw;
-        max-width: 50px;
+        max-width: 40px;
     }
 }
