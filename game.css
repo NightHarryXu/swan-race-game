@@ -120,9 +120,9 @@ html {
 
 @media (max-width: 600px) and (orientation: landscape) {
     .swan {
-        width: 6vw;
+        width: 4vw;
         /* 横屏时缩小天鹅的宽度，避免超出屏幕 */
-        max-width: 100px;
+        max-width: 60px;
         /* 限制最大宽度 */
     }
 }
