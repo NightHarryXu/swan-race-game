@@ -33,6 +33,7 @@ html {
     justify-content: space-between;
     /* 等间距排列 */
     height: 70%;
+    /* 占据屏幕中间75%的空间 */
 }
 
 .swan {
@@ -115,15 +116,13 @@ html {
 }
 
 
-/* 横屏设备限制，减少间距并缩小高度 */
+/* 为手机横屏设备应用限制 */
 
 @media (max-width: 600px) and (orientation: landscape) {
-    #swans {
-        height: 50%;
-        gap: 1%;
-    }
     .swan {
         width: 6vw;
-        max-width: 50px;
+        /* 横屏时缩小天鹅的宽度，避免超出屏幕 */
+        max-width: 100px;
+        /* 限制最大宽度 */
     }
 }
