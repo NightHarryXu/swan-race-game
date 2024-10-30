@@ -32,7 +32,7 @@ html {
     /* 垂直排列 */
     justify-content: space-between;
     /* 等间距排列 */
-    height: 75%;
+    height: 65%;
     /* 占据屏幕中间75%的空间 */
 }
 
