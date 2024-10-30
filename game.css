@@ -119,13 +119,11 @@ html {
 
 @media (max-width: 600px) and (orientation: landscape) {
     #swans {
-        height: 50%;
-        /* 缩小天鹅区域高度，避免超出 */
-        gap: 2%;
-        /* 缩小天鹅之间的间距 */
+        height: 60%;
+        gap: 1%;
     }
     .swan {
         width: 6vw;
-        max-width: 100px;
+        max-width: 50px;
     }
 }
