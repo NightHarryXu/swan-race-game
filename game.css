@@ -118,10 +118,10 @@ html {
 
 @media (max-width: 600px) and (orientation: landscape) {
     #swans {
-        height: 40%;
+        height: 30%;
     }
     .swan {
         width: 6vw;
-        max-width: 60px;
+        max-width: 50px;
     }
 }
