@@ -116,12 +116,9 @@ html {
 
 /* 为手机横屏设备应用限制 */
 
-@media (max-width: 600px) and (orientation: landscape) {
-    #swans {
-        height: 30%;
-    }
+@media (max-width: 1000px) and (orientation: landscape) {
     .swan {
-        width: 6vw;
+        width: 5vw;
         max-width: 50px;
     }
 }
